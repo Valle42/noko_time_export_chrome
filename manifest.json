@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Noko Time",
+  "default_icon": {
+    "32": "favicon.ico"
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js; object-src 'self'",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
